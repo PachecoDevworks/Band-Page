@@ -192,3 +192,10 @@
     height: 80vh;
   }
 }
+
+@media (orientation: landscape) {
+  .band-photo-container img {
+    width: 50%;
+    height: 70vh;
+  }
+}
