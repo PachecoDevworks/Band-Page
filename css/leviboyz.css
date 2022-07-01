@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: url(../img/ben-griffiths-l7R85WBKl1c-unsplash.jpg) fixed center;
+  overflow-x: hidden;
+}
+
+/********************
+/////HEADER NAV//////
+********************/
+.header {
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 9.6rem;
+  position: relative;
+}
+.logo img {
+  width: 14rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.link-lists {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+}
+
+.link-list {
+  position: relative;
+}
+
+.link-list::before {
+  content: "";
+  display: block;
+  height: 0.4rem;
+  background: white;
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 0.3s;
+  transform-origin: left;
+}
+
+.link-list:hover::before {
+  transform: scale(1, 1);
+}
+
+.link-list:link,
+.link-list:visited {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-cta:link,
+.header-cta:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: 400;
+  background-color: #707070;
+  padding: 1rem 2.4rem;
+  border: none;
+  border-radius: 100px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.header-cta:hover,
+.header-cta:active {
+  transform: scale(1.1);
+}
+
+/**********************************
+/////// MOBILE NAV //////////
+**********************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/**********************************
+///////BAND PHOTO SECTION//////////
+**********************************/
+.band-photo-section {
+  background-image: url(../img/resized.jpg);
+  background-size: cover;
+  padding-bottom: 4.8rem;
+  height: 100vh;
+}
+
+.band-photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 8.4rem;
+}
+
+.band-photo-container img {
+  width: 60%;
+  height: 85vh;
+
+  display: block;
+}
+
+/**********************************
+/////// MEDIA SECTION //////////
+**********************************/
+
+.media-section {
+  padding-top: 4.8rem;
+}
+
+.primary-header {
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Press Start 2p", sans-serif;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+/* 
+.media-section {
+  padding: 9.6rem 4.8rem;
+} */
+
+.vid-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3.2rem 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 35rem 35rem;
+  gap: 8rem;
+}
+
+.yvideo {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 3.2rem rgba(70, 69, 69, 0.699);
+}
+
+/**********************************
+/////// ABOUT SECTION //////////
+**********************************/
+
+.about-section {
+  color: #fff;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 9.6rem 4.8rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.gallery {
+  /* padding: 0 4.8rem 4.8rem 0; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.8rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.2);
+}
+
+.about-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.about-info h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.8rem;
+  margin-bottom: 3.6rem;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.info {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  margin-bottom: 9.6rem;
+}
+
+.genre {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+}
+
+.band-heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.band-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
